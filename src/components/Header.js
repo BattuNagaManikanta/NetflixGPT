@@ -47,7 +47,7 @@ const Header=()=>{
                 </div>
                 {user && <div className="flex justify-between align-middle">
                     <img className="w-11 h-11" src={user.photoURL}/>
-                    <button onClick={handleSignOut} className="font-bold text-lg text-black">(SignOut)</button>
+                    <button onClick={handleSignOut} className="font-bold text-lg">(SignOut)</button>
                 </div>}
             </div>
         </div>

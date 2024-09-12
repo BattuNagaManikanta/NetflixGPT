@@ -1,3 +1,29 @@
+# Steps to build a app
+
+- Add hardcoded values to constant.js
+- Register TMDB API & create an app and get access token
+- Get data from TMDB now playing  movies list API
+- Custome hook for Now Playing Movies
+- create a movieSslice
+- update store with movies data
+- planning for main container 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
