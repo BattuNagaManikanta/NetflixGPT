@@ -5,7 +5,7 @@ import { auth } from "../Utils/firebase";
 import { createUserWithEmailAndPassword,signInWithEmailAndPassword,updateProfile } from "firebase/auth";
 import { useDispatch } from "react-redux";
 import { addUser } from "../Utils/userSlice";
-import { AVATAR_LOGO } from "../Utils/constant";
+import { AVATAR_LOGO, LOGO } from "../Utils/constant";
 
 const Login=()=>{
     const [isSignInForm,setIsSignInForm]=useState(true);
@@ -94,7 +94,7 @@ const Login=()=>{
                         setIsSignInForm(!isSignInForm);
                     }}>{isSignInForm ?  "New to Netflix ? Sign Up Now" :  "Already a user ? Sign In Now"  }</p>
                 </form>
-                <img className="w-screen h-screen object-cover " src="https://assets.nflxext.com/ffe/siteui/vlv3/04bef84d-51f6-401e-9b8e-4a521cbce3c5/null/IN-en-20240903-TRIFECTA-perspective_0d3aac9c-578f-4e3c-8aa8-bbf4a392269b_large.jpg"/>  
+                <img className="w-screen h-screen object-cover " src={LOGO}/>  
             </div>
         </div>
     )
